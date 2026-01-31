@@ -26,18 +26,10 @@ Instead of manually checking waveforms, I developed a complete self-checking tes
 ## Verification Results
 
 ### 1. Handshake Waveform
-The waveform below shows the APB protocol in action. You can see the `psel` signal going high for the Setup phase, followed by `penable` for the Access phase, confirming the driver is working correctly.
+The waveform below shows the APB protocol in action.the `psel` signal goes high for the Setup phase, followed by `penable` for the Access phase, confirming the driver is working correctly.
 
 ![APB Waveform](apb_uvm_waveform.png)
 
 ### 2. Simulation Log
-The scoreboard automatically prints a **PASS** message for every successful match.
 ![APB Simulation](apb_uvm_simulation_log.png)
 
-```text
-UVM_INFO @ 115: reporter [RNTST] Running test apb_base_test...
-UVM_INFO scoreboard.sv: PASS: Addr=0x2a, Data=0xd82bcde
-UVM_INFO scoreboard.sv: PASS: Addr=0x05, Data=0x6c42523f
-UVM_INFO scoreboard.sv: PASS: Addr=0x32, Data=0xd5026711
---- UVM Report Summary ---
-Total Errors: 0, Total Warnings: 0
