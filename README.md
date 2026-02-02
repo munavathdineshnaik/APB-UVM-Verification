@@ -25,7 +25,7 @@ Instead of manually checking waveforms, I developed a complete self-checking tes
 
 ## Verification Results
 
-### 1. Handshake Waveform
+### 1. Waveform
 The waveform below shows the APB protocol in action.the `psel` signal goes high for the Setup phase, followed by `penable` for the Access phase, confirming the driver is working correctly.
 
 ![APB Waveform](sim/apb_uvm_waveform.png)
